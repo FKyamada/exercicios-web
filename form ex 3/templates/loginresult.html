@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% if result["status"] == "correto" %}
+		login realizado com sucesso
+	{% elif result["status"]== "senha_incorreta" %}
+		senha incorreta
+	{% elif result ["status"] == "usuario_incorreto" %}
+		usuario incorreto
+	{% else %}
+		erro de progrmação
+	{% endif %}
+
+	<a href="/home">home</a>
+</body>
+</html>
